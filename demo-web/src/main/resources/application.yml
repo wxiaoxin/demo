@@ -1,1 +1,6 @@
-# 这是只配置web层应有的配置项，比如服务端口，页面模板路径等等。不应该有数据库配置，事务配置等属于且已经在dao和service配置过的项
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/demo?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
