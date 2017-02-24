@@ -24,7 +24,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("info.xiaomo.website"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.demo.web"))
                 .paths(PathSelectors.any())
                 .build();
     }
